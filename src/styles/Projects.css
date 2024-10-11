@@ -1,0 +1,79 @@
+.projects {
+  padding: 20px 40px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflow to only show one image at a time */
+  border-radius: 8px;
+}
+
+.slideshow-image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slideshow-image-wrapper.transition {
+  transition: transform 0.5s ease;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.slideshow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  height: 80px;
+  width: 30px;
+}
+
+.slideshow-button.prev {
+  left: 0;
+}
+
+.slideshow-button.next {
+  right: 0;
+}
+
+.slideshow-bullets {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.slideshow-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.slideshow-bullet.active {
+  background-color: white;
+}
+
+body.dark-mode .projects h1 {
+  color: var(--color-white);
+}
+body.dark-mode .projects h2 {
+  color: var(--color-bg-light-hover);
+}
+body.dark-mode .projects p {
+  color: var(--color-secondary-light);
+}

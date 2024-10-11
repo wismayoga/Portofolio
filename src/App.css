@@ -1,0 +1,47 @@
+:root {
+  /* Base Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Primary Colors */
+  --color-primary: #007bff; /* Bright Blue */
+  --color-primary-light: #66b3ff; /* Lighter Blue */
+  --color-primary-dark: #0056b3; /* Darker Blue */
+
+  /* Secondary Colors */
+  --color-secondary: #6c757d; /* Gray */
+  --color-secondary-light: #b2b3b3; /* Light Gray */
+  --color-secondary-dark: #495057; /* Dark Gray */
+
+  /* Accent Colors */
+  --color-accent: #ffc107; /* Amber */
+  --color-accent-light: #ffd95f; /* Light Amber */
+  --color-accent-dark: #c69500; /* Dark Amber */
+
+  /* Background Colors */
+  --color-bg-light: #f8f9fa; /* Very Light Gray */
+  --color-bg-light-hover: #f1f3f5; /* Very Light Gray */
+  --color-bg-dark: #343a40; /* Dark Background for contrast */
+
+  /* Text Colors */
+  --color-text-primary: #333333; /* Dark Gray for primary text */
+  --color-text-secondary: #666666; /* Lighter Gray for secondary text */
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-primary);
+}
+
+.container {
+  max-width: 600px; /* Maximum width for mobile devices */
+  margin: 0 auto; /* Center the container */
+  /* padding: 0 20px; */
+}
+
+@media (min-width: 601px) {
+  .container {
+    max-width: 720px; /* Maximum width for larger screens */
+  }
+}

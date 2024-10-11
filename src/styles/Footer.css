@@ -1,0 +1,41 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-bg-light);
+  margin-top: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between icons as needed */
+}
+
+.footer-icon {
+  font-size: 20px; /* Adjust the size of the icons as needed */
+  color: var(
+    --color-secondary-dark
+  ); /* Adjust the color of the icons as needed */
+  transition: color 0.3s ease;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.footer-icon:hover {
+  background-color: var(--color-bg-light-hover);
+}
+
+.footer p {
+  font-size: 14px;
+  color: var(--color-secondary-light);
+}
+
+body.dark-mode .footer-icon {
+  color: var(--color-secondary-light);
+}
+body.dark-mode .footer-icon:hover {
+  color: var(--color-secondary-dark);
+}
+body.dark-mode .footer p {
+  color: var(--color-secondary-dark);
+}

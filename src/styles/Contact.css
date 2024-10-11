@@ -1,0 +1,56 @@
+.contact {
+  padding: 20px 40px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.contact-list li a:hover {
+  color: var(--color-primary);
+}
+
+.contact-icon {
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+
+.contact-gif {
+  margin-top: 20px;
+}
+
+.contact-gif img {
+  max-width: 100%;
+}
+
+body.dark-mode .contact-list li a {
+  color: var(--color-secondary-light);
+}
+body.dark-mode .contact-list li a:hover {
+  color: var(--color-primary);
+}

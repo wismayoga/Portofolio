@@ -1,0 +1,410 @@
+.about {
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 30px;
+  font-family: Arial, sans-serif;
+}
+
+.about-title {
+  font-size: 2 rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about p {
+  font-size: 1 rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-profile-image {
+  display: block;
+  max-width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.about-signature-text {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.about-signature-image {
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+
+.skill-card {
+  /* background-color: #f0f0f0; */
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.skill p svg {
+  margin-right: 8px; /* Adds some space between the icon and the text */
+  color: var(--color-primary);
+}
+
+.skill-bar {
+  background-color: var(--color-secondary-light);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.skill-percentage {
+  height: 100%;
+  border-radius: 20px;
+  background-color: var(
+    --color-primary-dark
+  ); /* Single color for all percentage bars */
+}
+
+.skill-percentage.html {
+  width: 90%;
+}
+
+.skill-percentage.css {
+  width: 85%;
+}
+
+.skill-percentage.dart {
+  width: 80%;
+}
+
+.skill-percentage.react {
+  width: 75%;
+}
+
+.skill-percentage.laravel {
+  width: 85%;
+}
+
+.about-signature-image {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.about-signature-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.about-timeline {
+  position: relative;
+  width: 100%;
+  max-width: 570px; /* Set to match .about max-width */
+  margin: 0 auto; /* Center the timeline */
+  padding: 10px; /* Match .about padding */
+}
+
+.about-timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: var(--color-primary-dark);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.about-timeline-container {
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.about-timeline-container.about-timeline-left {
+  left: 0;
+}
+
+.about-timeline-container.about-timeline-right {
+  left: 50%;
+}
+
+.about-timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 10px);
+  right: -10px;
+  background: #ffffff;
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.about-timeline-container.about-timeline-right::after {
+  left: -10px;
+}
+
+.about-timeline-container::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: var(--color-primary-dark);
+  z-index: 1;
+}
+
+.about-timeline-container.about-timeline-right::before {
+  left: 7px;
+}
+
+.about-timeline-container .about-timeline-date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 9px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.about-timeline-container.about-timeline-left .about-timeline-date {
+  right: -100px;
+}
+
+.about-timeline-container.about-timeline-right .about-timeline-date {
+  left: -100px;
+}
+
+.about-timeline-container .about-timeline-icon {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  top: calc(50% - 20px);
+  background: var(--color-bg-light);
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-primary-dark);
+  z-index: 1;
+}
+
+.about-timeline-container.about-timeline-left .about-timeline-icon {
+  right: 50px;
+}
+
+.about-timeline-container.about-timeline-right .about-timeline-icon {
+  left: 50px;
+}
+
+.about-timeline-container .about-timeline-content {
+  padding: 15px 0px 15px 15px;
+  background: var(--color-primary-light);
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  right: 30px;
+}
+
+.about-timeline-container.about-timeline-right .about-timeline-content {
+  padding: 30px 30px 30px 70px;
+  border-radius: 500px 0 0 500px;
+  left: 30px;
+}
+
+.about-timeline-container .about-timeline-content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--color-text-primary);
+}
+
+.about-timeline-container .about-timeline-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 767.98px) {
+  .about-timeline::after {
+    left: 90px;
+  }
+
+  .about-timeline-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .about-timeline-container.about-timeline-right {
+    left: 0%;
+  }
+
+  .about-timeline-container.about-timeline-left::after,
+  .about-timeline-container.about-timeline-right::after {
+    left: 82px;
+  }
+
+  .about-timeline-container.about-timeline-left::before,
+  .about-timeline-container.about-timeline-right::before {
+    left: 100px;
+    border-color: transparent var(--color-primary-dark) transparent transparent;
+  }
+
+  .about-timeline-container.about-timeline-left .about-timeline-date,
+  .about-timeline-container.about-timeline-right .about-timeline-date {
+    right: auto;
+    left: 15px;
+  }
+
+  .about-timeline-container.about-timeline-left .about-timeline-icon,
+  .about-timeline-container.about-timeline-right .about-timeline-icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .about-timeline-container.about-timeline-left .about-timeline-content,
+  .about-timeline-container.about-timeline-right .about-timeline-content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+.about-whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.about-whatsapp-button:hover {
+  background-color: var(--color-primary);
+}
+
+.about-whatsapp-icon {
+  margin-right: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .about-timeline {
+    padding: 0; /* Ensure there's padding around the timeline */
+  }
+
+  .about-timeline-container {
+    width: 100%; /* Full width on mobile */
+    max-width: 250px;
+    padding: 0; /* Remove left and right padding */
+    margin-bottom: 10px; /* Space between timeline items */
+  }
+
+  .about-timeline-container .about-timeline-date {
+    display: block; /* Stack the date above the content */
+    text-align: center; /* Center align the date */
+    margin-bottom: 5px; /* Space below the date */
+    font-size: 0.8rem; /* Adjust font size for mobile */
+    color: var(--color-primary-dark); /* Match your theme color */
+  }
+
+  .about-timeline-container .about-timeline-icon {
+    display: block; /* Center the icon above the text */
+    margin: 0 auto 10px; /* Center the icon and space below */
+  }
+
+  .about-timeline-container .about-timeline-content {
+    padding: 5px; /* Uniform padding around content */
+    border-radius: 10px; /* Softer corners */
+    text-align: center; /* Center text for a better look */
+  }
+
+  .about-timeline-container .about-timeline-content-left {
+    left: 0px;
+  }
+
+  .about-timeline-container.about-timeline-left .about-timeline-date {
+    position: absolute; /* Make it absolute to position relative to parent */
+    left: -110px; /* Adjust this value to position it correctly */
+    top: calc(50% - 0px); /* Center vertically with respect to the timeline */
+    transform: translateY(-50%); /* Center it vertically */
+    color: var(--color-primary-dark); /* Match your theme color */
+    font-size: 0.8rem; /* Adjust font size for mobile */
+  }
+
+  .about-timeline-container.about-timeline-right .about-timeline-date {
+    left: -80px;
+    color: var(--color-primary-dark); /* Match your theme color */
+    font-size: 0.8rem;
+  }
+
+  .about-timeline-container.about-timeline-right {
+    position: relative; /* Set to relative for positioning */
+    transform: translateX(30%); /* Adjust position */
+  }
+  .about-timeline-container.about-timeline-left {
+    position: relative; /* Set to relative for positioning */
+    transform: translateX(42%); /* Adjust position */
+  }
+
+  .about-timeline-container.about-timeline-left::after {
+    left: -25px; /* Align to the left */
+  }
+
+  .about-timeline-container.about-timeline-right::after {
+    left: 5px; /* Align to the right */
+  }
+  .about-timeline-container.about-timeline-left::before {
+    left: -5px; /* Align to the left */
+  }
+
+  .about-timeline-container.about-timeline-right::before {
+    left: 5px; /* Align to the right */
+  }
+
+  .about-timeline-container.about-timeline-left .about-timeline-icon {
+    left: 20px; /* Adjust icon position for left side */
+  }
+
+  .about-timeline-container.about-timeline-right .about-timeline-icon {
+    left: 50px; /* Adjust icon position for right side */
+  }
+
+  .about-timeline-container .about-timeline-content h2 {
+    font-size: 1.1rem; /* Adjusted font size for mobile */
+    margin-bottom: 2px;
+  }
+
+  .about-timeline-container .about-timeline-content p {
+    font-size: 0.9rem; /* Adjusted font size for mobile */
+  }
+}
+
+/* Dark Mode for Timeline Date Text */
+body.dark-mode .about-timeline-container .about-timeline-date {
+  color: var(
+    --color-text-light
+  ); /* Lighter color for better contrast in dark mode */
+}

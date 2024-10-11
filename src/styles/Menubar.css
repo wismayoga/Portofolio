@@ -1,0 +1,59 @@
+.menubar {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menubar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 100%;
+}
+
+.menubar li {
+  margin-right: 0px;
+}
+
+.menubar button {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-light);
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 16px;
+  border-bottom: 3px solid transparent; /* Initially hide border */
+}
+
+.menubar button:hover {
+  background-color: var(--color-bg-light-hover);
+}
+
+.menubar button.active {
+  border-bottom: 3px solid var(--color-primary-dark); /* Show red bottom border for active button */
+}
+
+/* Dark Mode for Menubar */
+body.dark-mode .menubar {
+  background-color: var(--color-bg-dark);
+}
+
+body.dark-mode .menubar button {
+  color: var(--color-white);
+  background-color: var(--color-bg-dark);
+  border-bottom: 3px solid transparent; /* Keep transparent for inactive */
+}
+
+body.dark-mode .menubar button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+body.dark-mode .menubar button.active {
+  border-bottom: 3px solid var(--color-primary-light); /* Lighten for active button in dark mode */
+}

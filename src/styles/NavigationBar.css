@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-bg-light);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-image {
+  width: 35px;
+}
+
+.navbar-theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.navbar-theme-icon {
+  color: var(--color-bg-dark);
+  font-size: 22px;
+}
+
+.navbar-theme-icon:hover {
+  color: var(--color-primary-dark); /* Optional: Change color on hover */
+}
+
+/* Add dark mode styles */
+body.dark-mode {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-secondary);
+}
+
+body.dark-mode .navbar {
+  background-color: var(--color-bg-dark); /* Darker background for dark mode */
+  opacity: 0.8;
+}
+
+body.dark-mode .navbar-theme-icon {
+  color: var(--color-accent); /* Sun icon color in dark mode */
+}
+
+body.dark-mode .navbar-theme-icon:hover {
+  color: var(--color-accent-dark); /* Sun icon color in dark mode */
+}
+
+/* Adjust other elements for dark mode */
+body.dark-mode .profile,
+body.dark-mode .projects,
+body.dark-mode .footer {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-secondary);
+}

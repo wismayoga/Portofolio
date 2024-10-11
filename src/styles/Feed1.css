@@ -1,0 +1,156 @@
+.feed1 {
+  padding: 20px;
+  margin: 10px;
+}
+
+.feed1-post {
+  border: 2px solid var(--color-bg-light-hover);
+  border-radius: 10px;
+  padding: 15px;
+  background-color: var(--color-bg-light);
+}
+
+.feed1-post:hover {
+  background-color: var(--color-bg-light-hover);
+}
+
+.feed1-post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.feed1-pin-icon {
+  margin-right: 5px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+
+.feed1-post-body {
+  display: flex;
+}
+
+.feed1-post-profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.feed1-post-content {
+  flex: 1;
+}
+
+.feed1-post-row {
+  margin-bottom: 10px;
+}
+
+.feed1-post-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.feed1-post-date {
+  color: var(--color-secondary);
+}
+
+.feed1-post-tag {
+  background-color: var(--color-secondary-light);
+  border-radius: 10px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.feed1-post-title {
+  margin: 0;
+  font-size: 25px;
+}
+
+.feed1-post-description {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.feed1-post-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feed1-post-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.feed1-action-icon {
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: color 0feed1-3s ease;
+}
+
+.feed1-action-icon:hover {
+  color: var(--color-primary-light);
+}
+
+/* Media query for mobile adjustments */
+@media (max-width: 768px) {
+  .feed1-post-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .feed1-post-date {
+    font-size: 0.8rem;
+  }
+}
+
+/* Dark Mode for Feed */
+body.dark-mode .feed1-post {
+  border: 2px solid var(--color-secondary-dark);
+  background-color: var(--color-bg-dark);
+}
+
+body.dark-mode .feed1-post:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+body.dark-mode .feed1-post-header {
+  color: var(--color-text-secondary);
+}
+
+body.dark-mode .feed1-pin-icon {
+  color: var(--color-text-secondary);
+}
+
+body.dark-mode .feed1-post-date {
+  color: var(--color-text-secondary);
+}
+
+body.dark-mode .feed1-post-tag {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+
+body.dark-mode .feed1-post-title {
+  color: var(--color-white);
+}
+
+body.dark-mode .feed1-post-description {
+  color: var(--color-secondary-light);
+}
+
+body.dark-mode .feed1-action-icon {
+  color: var(--color-secondary-light);
+}
+
+body.dark-mode .feed1-action-icon:hover {
+  color: var(--color-primary-light);
+}
